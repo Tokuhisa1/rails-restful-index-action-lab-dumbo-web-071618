@@ -1,0 +1,6 @@
+<h1> Students </h1>
+<!-- Map an index.html.erb view file to the student controller and iterate over
+the list of students returned from the index action in the controller -->
+<% @students.each do |student| %>
+  <li><%= student.first_name %> <%= student.last_name %></li>
+<% end %>
